@@ -9,7 +9,7 @@ require(mxnet)
 setwd("/Users/masimonson/Documents/Code/R/R_2017/MxNetExample/ImageClassification/train")
 
 
-## define function to create image array required by mxnet
+## define function to create image array storing image data in format required by mxnet
 # inputs: images = vector of image file names, w=width in pixels, h=height in pixels
 # 
 # output: array containing images data in format expected by mxnet
@@ -83,7 +83,7 @@ fcl_2 <- mx.symbol.FullyConnected(data = tanh_3, num_hidden = 2)
 NN_model <- mx.symbol.SoftmaxOutput(data = fcl_2)
 
 # Set seed for reproducibility
-mx.set.seed(100)
+mx.set.seed(123)
 
 # Device used. 
 device <- mx.gpu()
