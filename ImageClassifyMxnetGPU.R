@@ -5,7 +5,7 @@ require(abind)
 require(EBImage)
 require(mxnet)
 
-# Resize images and convert to grayscale
+# set working directory
 setwd("/Users/masimonson/Documents/Code/R/R_2017/MxNetExample/ImageClassification/train")
 
 
