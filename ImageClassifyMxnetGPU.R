@@ -91,7 +91,7 @@ device <- mx.gpu()
 # Train 
 model <- mx.model.FeedForward.create(NN_model, X = train.Array, y = train.class,
                                      ctx = device,
-                                     num.round = 10,
+                                     num.round = 30,
                                      array.batch.size = 100,
                                      learning.rate = 0.05,
                                      momentum = 0.9,
